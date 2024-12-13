@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Fund</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a> /
+        <a href="#strategy">Strategy</a> /
+        <a href="#invest">Invest</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Agent Fund</h1>
+        <p>A semi-autonomous venture capital fund investing in autonomous agent startups.</p>
+        <div class="cta-container">
+            <button class="cta" onclick="showModal('investor')">Invest in Agent Fund ></button>
+            <button class="cta cta-secondary" onclick="showModal('startup')">Apply for Funding ></button>
+        </div>
+    </div>
+
+    <div id="modalInvestor" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideModal('investor')">&times;</span>
+            <h2>AngelList Page Coming Soon</h2>
+            <p>We're preparing our AngelList rolling fund page. Stay tuned!</p>
+        </div>
+    </div>
+
+    <div id="modalStartup" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideModal('startup')">&times;</span>
+            <h2>Application Form Coming Soon</h2>
+            <p>We're preparing our startup application process. Check back soon!</p>
+        </div>
+    </div>
+
+    <div class="ascii-divider">
+        * * * * * *
+    </div>
+
+    <section id="strategy">
+        <h2>Strategy</h2>
+        <p>Agent Fund is a rolling fund dedicated to investing and supporting startups building, deploying, and supporting autonomous agents and relevant infrastructure. The fund will cut $50k-$100k checks across a large number of autonomous agent startups to build a community, foster collaboration, and support them at scale.</p>
+    </section>
+
+    <div class="ascii-divider">
+        ≈≈≈≈≈≈≈≈≈≈≈≈
+    </div>
+
+    <section id="invest">
+        <h2>Investing in Agent Fund</h2>
+        <p>Agent Fund will be run semi-autonomously leveraging AI across all aspects of the business from deal sourcing, selection, to portfolio management. We are calling the system semi-autonomous because we will still have people make key decisions, leveraging AI for all of the operations and data gathering.</p>
+
+        <div class="metrics">
+            <p>Minimum Target Fund Size: $2 Million</p>
+            <p>Subscription Amount: $10k quarterly</p>
+            <p>Subscription Period: 4 quarter minimum</p>
+            <p>Management Fee: 2%</p>
+            <p>Carry: 20%</p>
+        </div>
+
+        <a href="#contact" class="cta">I'm Interested >></a>
+    </section>
+
+    <div class="ascii-divider">
+        ━━━━━━━━━━━━
+    </div>
+
+    <section id="team">
+        <h2>Team</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <h3>Yohei Nakajima</h3>
+                <p>Creator of BabyAGI and foremost influencer in the autonomous agent marketplace. Kicked off the autonomous agent movement in April 2022, inspiring over 40 agent-related projects with 500+ stars on GitHub.</p>
+            </div>
+            <div class="team-member">
+                <h3>Adam Silverman</h3>
+                <p>Co-founder of AgentOps. Brings expertise in building and debugging AI agents through AgentOps, an industry-leading platform used by thousands of teams to test, debug, and monitor agent behavior.</p>
+            </div>
+            <div class="team-member">
+                <h3>Alex Reibman</h3>
+                <p>Co-founder of AgentOps. Experience spans consulting, enterprise-grade AI solutions, and developing tools to streamline agent deployment. Helped build the leading agent observability platform.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Agent Fund. All rights reserved.</p>
+    </footer>
+</body>
+</html>

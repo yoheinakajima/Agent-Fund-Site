@@ -1,0 +1,174 @@
+:root {
+  --bg: #FFFEF2;
+  --text: #2A2A2A;
+  --link: #0F3460;
+  --link-hover: #1A5F7A;
+  --highlight: #FFE8D6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  line-height: 1.6;
+  max-width: 66ch;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background: var(--bg);
+  color: var(--text);
+}
+
+nav {
+  margin: 2rem 0 4rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--text);
+}
+
+nav a {
+  margin-right: 1rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--link-hover);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: 3rem 0 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+.hero {
+  margin: 4rem 0;
+  padding: 2rem 0;
+  border-top: 1px solid var(--text);
+  border-bottom: 1px solid var(--text);
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.metrics {
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid var(--text);
+  border-bottom: 1px solid var(--text);
+}
+
+.metrics p {
+  margin: 0.5rem 0;
+}
+
+.cta {
+  display: inline-block;
+  margin: 2rem 0;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--text);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.cta:hover {
+  background: var(--text);
+  color: var(--bg);
+}
+
+.cta-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta-secondary {
+  border-style: dashed;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(42, 42, 42, 0.8);
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background-color: var(--bg);
+  margin: 15% auto;
+  padding: 2rem;
+  border: 1px solid var(--text);
+  width: 90%;
+  max-width: 500px;
+}
+
+.close {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: var(--link-hover);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.team-member {
+  padding: 1rem;
+  border: 1px solid var(--text);
+}
+
+.team-member h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed var(--text);
+}
+
+.team-member p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--text);
+  font-size: 0.875rem;
+}
+
+.ascii-divider {
+  font-family: monospace;
+  text-align: center;
+  margin: 2rem 0;
+  color: #666;
+}
