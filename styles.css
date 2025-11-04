@@ -172,3 +172,30 @@ footer {
   margin: 2rem 0;
   color: #666;
 }
+
+.investments-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.investments-grid a {
+  color: var(--link);
+  text-decoration: none;
+  padding: 0.5rem;
+  border-bottom: 1px dashed var(--link);
+  transition: all 0.2s ease;
+}
+
+.investments-grid a:hover {
+  color: var(--link-hover);
+  border-bottom: 1px solid var(--link-hover);
+  background: var(--highlight);
+}
+
+@media (max-width: 600px) {
+  .investments-grid {
+    grid-template-columns: 1fr;
+  }
+}
