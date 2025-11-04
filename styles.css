@@ -183,15 +183,13 @@ footer {
 .investments-grid a {
   color: var(--link);
   text-decoration: none;
-  padding: 0.5rem;
-  border-bottom: 1px dashed var(--link);
+  padding: 0.25rem 0;
   transition: all 0.2s ease;
 }
 
 .investments-grid a:hover {
   color: var(--link-hover);
-  border-bottom: 1px solid var(--link-hover);
-  background: var(--highlight);
+  text-decoration: underline;
 }
 
 @media (max-width: 600px) {
